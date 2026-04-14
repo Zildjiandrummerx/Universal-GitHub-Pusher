@@ -1,0 +1,34 @@
+# ==========================================
+# 🛑 SECURITY: CRITICAL SECRETS 
+# ==========================================
+# We explicitly ignore the active pushing script because it contains 
+# the author's live Personal Access Token (PAT).
+# Only 'github_push_template.sh' will be committed to the public repo.
+github_pusher.sh
+.env
+*.pem
+*.key
+
+# ==========================================
+# 💻 OS & SYSTEM JUNK FILES
+# ==========================================
+# Keeps Mac/Windows hidden system files out of the repository
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ==========================================
+# 🛠️ IDE & EDITOR FILES
+# ==========================================
+# Keeps personal workspace settings out of the public repo
+.vscode/
+.idea/
+*.swp
+*.swo
