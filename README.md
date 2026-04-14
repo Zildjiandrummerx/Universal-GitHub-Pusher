@@ -58,7 +58,7 @@ Run the deployment:
 ### ⚙️ How It Works (The Core Logic)
 The magic of this script lives in its Bash error-handling block. Standard Git pushes will fail if histories mismatch. This script intercepts stderr and uses the || (OR) operator to trigger a fallback mechanism:
 
-# It tries to push normally. If it fails, the 'if' block catches it silently.
+It tries to push normally. If it fails, the 'if' block catches it silently.
 ```bash
 if ! git push -u origin main > /dev/null 2>&1; then
     echo "[-] Normal push rejected by GitHub (Mismatched Histories detected)."
